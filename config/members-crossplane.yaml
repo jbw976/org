@@ -456,6 +456,19 @@ spec:
 apiVersion: organizations.github.crossplane.io/v1alpha1
 kind: Membership
 metadata:
+  name: crossplane-kaessert
+  labels:
+    org: crossplane
+spec:
+  forProvider:
+    inviteeId: 339932
+    user: kaessert
+    organization: crossplane
+    role: direct_member
+---
+apiVersion: organizations.github.crossplane.io/v1alpha1
+kind: Membership
+metadata:
   name: crossplane-kasey
   labels:
     org: crossplane
